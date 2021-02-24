@@ -17,7 +17,7 @@ import java.util.Collections;
 
 @Configuration
 @EnableSwagger2
-@Import(BeanValidatorPluginsConfiguration.class)
+//@Import(BeanValidatorPluginsConfiguration.class)
 @PropertySource("classpath:swagger.properties")
 public class SwaggerConfig {
 
@@ -46,26 +46,4 @@ public class SwaggerConfig {
 
 }
 
-	/*
-	 * Contact contact = new Contact("TODO", "http://www.todo.com", "todo@info.com"
-	 * 
-	 * );
-	 * 
-	 * List<VendorExtension> vendorExtensions = new ArrayList<>();
-	 * 
-	 * ApiInfo apiInfo = new ApiInfo("TODO App RESTful web service documentation",
-	 * 
-	 * "This pages  documents TODO App RESTful web service endpoints", "1.0",
-	 * "http://www.todo.com/service.html", contact, "Apache 2.0",
-	 * "http://www.apache.org/licenses/LICENSE-2.0", vendorExtensions);
-	 * 
-	 * @Bean public Docket apiDocket() {
-	 * 
-	 * Docket docket = new Docket(DocumentationType.SWAGGER_2)
-	 * 
-	 * .apiInfo(apiInfo).select().apis(RequestHandlerSelectors.basePackage(
-	 * "net.todo")) .paths(PathSelectors.any()).build();
-	 * 
-	 * return docket; }
-	 */
-
+	
